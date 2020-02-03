@@ -11,27 +11,31 @@
             </div>
         </div>
         <div class="col l6 m6 s12">
-            
+
             <div class="error center-align">
                 {{message}}
             </div>
-            
+
             <form action="/order/add" method="POST">
 
-                <input id="name" name="name" type="text" placeholder="Name" class="validate" value={{name}}>
+                <input id="name" name="name" type="text" placeholder="Name" class="validate" required='true'
+                    value={{name}}>
 
-                <input id="email" name="email" type="email" placeholder="Email address" class="validate"
+                <input id="email" name="email" type="email" placeholder="Email address" required='true' class="validate"
                     value={{email}}>
-                <input id="phone" name="phone" type="text" placeholder="Phone Number" class="validate" value={{phone}}>
+                <input id="phone" name="phone" type="text" placeholder="Phone Number" class="validate" required='true'
+                    value={{phone}}>
 
-                <input id="type" name="type" type="text" placeholder="Type of Cake" class="validate" value={{type}}>
-                <input id="location" name="location" type="text" placeholder="Your Location" class="validate"
-                    value={{location}}>
-                <input id="date" name="date" type="date" placeholder="Date" class="validate" value={{date}}>
+                <input id="type" name="type" type="text" placeholder="Type of Cake" class="validate" required='true'
+                    value={{type}}>
+                <input id="location" name="location" type="text" placeholder="Your Location" required='true'
+                    class="validate" value={{location}}>
+                <input id="date" name="date" type="date" placeholder="Date" class="validate" required='true'
+                    value={{date}}>
                 <label for="date">Date cake is needed</label>
 
-                <textarea id="note" name="note" class="materialize-textarea"
-                    placeholder="order Note">{{note}}</textarea>
+                <textarea id="note" name="note" class="materialize-textarea" placeholder="order Note"
+                    required='true'>{{note}}</textarea>
                 <button class="btn  waves-effect waves-light" type="submit">Order</button>
 
             </form>

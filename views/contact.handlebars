@@ -14,6 +14,16 @@
 
             <h4>Give us a call</h4>
             <h5>{{phone}}</h5>
+            {{else}}
+            <h4>Address</h4>
+            <address>
+                123 Street Ahoe Ho,Ghana
+            </address>
+            <h4>Email Us</h4>
+            <h5>renecakes@gmail.com</h5>
+
+            <h4>Give us a call</h4>
+            <h5>+23354786989</h5>
             {{/each}}
         </div>
         <div class="col l6 m6 s12">
@@ -24,16 +34,17 @@
             {{/each}}
             <form action="/enquery" method="POST">
 
-                <input id="name" name="name" type="text" placeholder="Name" class="validate" value={{name}} required>
+                <input id="name" name="name" type="text" placeholder="Name" class="validate" required="true"
+                    value={{name}}>
 
-                <input id="email" name="email" type="email" placeholder="Email address" class="validate" value={{email}}
-                    required>
+                <input id="email" name="email" type="email" placeholder="Email address" class="validate" required='true' value={{email}}
+                    >
 
-                <input id="subject" name="subject" type="text" placeholder="Subject" class="validate" value={{subject}}
-                    required>
+                <input id="subject" name="subject" type="text" placeholder="Subject" class="validate"required='true' value={{subject}}
+                    >
 
                 <textarea id="textarea1" name="message" class="materialize-textarea" placeholder="Message"
-                    required>{{message}}</textarea>
+                    required='true'>{{message}}</textarea>
                 <button class="btn  waves-effect waves-light" type="submit">send</button>
 
             </form>
