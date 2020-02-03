@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="center-align">
+        <h3>fill the form below to palce an order</h3>
+    </div>
+    <div class="row">
+        <div class="col l6 m6 s12">
+            <img class="responsive-img" src="/img/about.svg" alt="about image">
+            <div class="center-align">
+                <p> Place that order. Let's give your celebration a memoriable cake</p>
+
+            </div>
+        </div>
+        <div class="col l6 m6 s12">
+            
+            <div class="error center-align">
+                {{message}}
+            </div>
+            
+            <form action="/order/add" method="POST">
+
+                <input id="name" name="name" type="text" placeholder="Name" class="validate" value={{name}}>
+
+                <input id="email" name="email" type="email" placeholder="Email address" class="validate"
+                    value={{email}}>
+                <input id="phone" name="phone" type="text" placeholder="Phone Number" class="validate" value={{phone}}>
+
+                <input id="type" name="type" type="text" placeholder="Type of Cake" class="validate" value={{type}}>
+                <input id="location" name="location" type="text" placeholder="Your Location" class="validate"
+                    value={{location}}>
+                <input id="date" name="date" type="date" placeholder="Date" class="validate" value={{date}}>
+                <label for="date">Date cake is needed</label>
+
+                <textarea id="note" name="note" class="materialize-textarea"
+                    placeholder="order Note">{{note}}</textarea>
+                <button class="btn  waves-effect waves-light" type="submit">Order</button>
+
+            </form>
+        </div>
+    </div>
+</div>

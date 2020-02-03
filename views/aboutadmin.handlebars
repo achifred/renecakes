@@ -1,0 +1,22 @@
+<div class=" center-align container">
+    <h3>Site Information</h3>
+    <div class="container">
+        {{#each result}}
+        <h3>About</h3>
+        <p>{{about}}</p>
+
+        <h3>Mission</h3>
+        <p>{{mission}}</p>
+        <h3>Email</h3>
+        <p>{{email}}</p>
+
+        <h3>Phone</h3>
+        <p>{{phone}}</p>
+        <h3>Addres</h3>
+        <p>{{address}}</p>
+        <a class="btn blue" href="/about/edit"><i class="material-icons">edit</i></a>
+        {{else}}
+        <p>No site data available</p>
+        {{/each}}
+    </div>
+</div

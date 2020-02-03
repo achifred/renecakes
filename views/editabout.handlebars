@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="center-align">
+        <h3>Get in touch with ReneCakes</h3>
+    </div>
+
+
+    <div class="container">
+
+        <form action="/about/update" method="POST">
+
+            {{#each result}}
+            <textarea id="textarea1" name="about" class="materialize-textarea" placeholder="about">{{about}}</textarea>
+            <textarea id="textarea1" name="mission" class="materialize-textarea"
+                placeholder="Mission">{{mission}}</textarea>
+            <input id="phone" name="phone" type="text" placeholder="Phone" class="validate" value={{phone}}>
+
+            <input id="email" name="email" type="email" placeholder="Email address" class="validate" value={{email}}>
+
+            <input id="address" name="address" type="text" placeholder="Adress" class="validate" value={{address}}>
+            <input id="id" name="id" type="hidden" class="validate" value={{id}}>
+
+
+            <button class="btn  waves-effect waves-light" type="submit">Update</button>
+
+            {{/each}}
+
+        </form>
+    </div>
+
+</div>

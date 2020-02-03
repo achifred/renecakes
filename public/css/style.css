@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Livvic", sans-serif;
+    font-size: 22px;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.navbar {
+    background-color: inherit;
+}
+.navbar ul li a {
+    font-family: "Courgette", cursive;
+    font-size: 18px;
+}
+#introcontainer h3 {
+    font-family: "Courgette", cursive;
+    font-size: 45px;
+    transform-origin: 0 10%;
+}
+#introcontainer p {
+    font-family: "Livvic", sans-serif;
+}
+.Header {
+    overflow-y: auto;
+    height: calc(100vh - 0px);
+    background-color: #f2f2f8;
+}
+.navitem li a {
+    color: #585555;
+}
+
+.introimg {
+    width: 750px;
+    width: 550px;
+    margin-top: -20px;
+}
+.servicescard {
+    margin-top: -5px;
+    padding: 20px;
+}
+.cardContainer {
+    margin-top: 30px;
+}
+.carouselcard {
+    margin-top: -80px;
+    width: 300px;
+    height: 500px;
+}
+
+.whyorder {
+    margin-bottom: 100px;
+}
+.servicecontainer {
+    margin-bottom: 100px;
+}
+
+.welcomeIntro {
+    margin-top: 6rem;
+}
+.navbrand {
+    font-family: "Dancing Script", cursive;
+    font-size: 45px;
+    color: #eca274;
+}
+.footercontainer {
+    background-color: #e4ba9f;
+}
+
+@media (max-width: 700px) {
+    .imgcontainer {
+        visibility: hidden;
+    }
+
+    .Header {
+        overflow-y: auto;
+        height: calc(100vh - 0px);
+        background: linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+            ),
+            url(/img/cake.svg);
+        justify-content: center;
+        text-align: center;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .welcomeIntro {
+        margin-top: 0.5rem;
+    }
+    .servicescard {
+        margin-top: 5px;
+        width: fit-content;
+    }
+    .cardContainer {
+        margin-top: 20px;
+    }
+    #introcontainer p {
+        font-family: "Livvic", sans-serif;
+
+        color: white;
+    }
+}

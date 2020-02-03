@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col l6 m6 s12">
+            <img class="responsive-img" src="/img/about.svg" alt="about image">
+            <div class="center-align">
+                <p>Let's give your celebration a memoriable cake</p>
+                <a href="/contact" class="btn waves-effect waves-light">Contact us today!!</a>
+            </div>
+        </div>
+        <div class="col l6 m6 s12">
+            <div class="center-align">
+                {{#each result}}
+                <h3>Who We Are</h3>
+                <p>{{about}}</p>
+                <h3>Our Mission</h3>
+                <p>{{mission}}</p>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>

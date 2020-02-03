@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rene Cakes </title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran|Courgette|Dancing+Script|Livvic&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/353c6e4283.js" crossorigin="anonymous"></script>
+</head>
+<main>
+
+    <body class=" landing">
+
+        <div class="container">
+            <ul id="slide-out" class="sidenav sidenav-fixed">
+                <li>
+                    <div class="user-view center-align">
+
+                        <a href="#name"><span class="black-text name"></span></a>
+                        <a href="#email"><span class="black-text email"></span></a>
+                    </div>
+                </li>
+                <li><a href="/dashboard">Dashboard</a></li>
+
+                <li>
+                    <div class="divider"></div>
+                </li>
+
+                <li><a class="waves-effect" href="/users">Users</a></li>
+                <li><a class="waves-effect" href="/enquery">Enqueries</a></li>
+                <li><a class="waves-effect" href="/works/workadmin">Works</a></li>
+                <li><a class="waves-effect" href="/about/aboutadmin">About</a></li>
+                <li><a class="waves-effect" href="/order/orderadmin">Order</a></li>
+
+                <li><a class="waves-effect" href="/">Home</a></li>
+                <li><a class="waves-effect" href="#!">Logout</a></li>
+            </ul>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+
+        {{{body}}}
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="/js/main.js"></script>
+    </body>
+</main>
+
+
+</html>

@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="right-align">
+        <a class="btn  right-align modal-trigger " href="#addwork">Add Gallery</a>
+    </div>
+    <div id="addwork" class="modal">
+        <div class="modal-content">
+            <h3>Add New Photo</h3>
+            <form action="/works/add" method="POST">
+
+                <div class="file-field input-field">
+                    <div class="btn">
+                        <span>File</span>
+                        <input type="file" name="picture" enctype="multipart/form-data">
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" placeholder="Upload a file">
+                    </div>
+                </div>
+
+
+
+                <button class="btn  waves-effect waves-light" type="submit">Add</button>
+
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">close</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <table class="striped responsive-table centered ">
+            <thead>
+                <tr>
+                    <th>picture</th>
+
+
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {{#each result}}
+                <tr>
+                    <td>{{picture}}</td>
+
+                    <td><a class="btn btn-small red" href="/users/delete/{{id}}"><i
+                                class="material-icons">delete</i></a>
+
+                </tr>
+                {{else}}
+                <tr>
+                    <td>No Works available</td>
+                </tr>
+
+                {{/each}}
+
+
+            </tbody>
+        </table>
+
+    </div>
+</div>

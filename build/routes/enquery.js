@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const enquery_1 = require("../controller/enquery");
+const router = express_1.Router();
+const enquery = new enquery_1.Enqueries();
+router.post("/", enquery.addEnquery);
+router.get("/", enquery.getEnqueries);
+router.get("/delete/:id", enquery.deleteEnquery);
+exports.default = router;

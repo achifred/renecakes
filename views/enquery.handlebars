@@ -1,0 +1,39 @@
+<div class="container">
+
+
+
+    <div class="container">
+        <table class="striped responsive-table centered ">
+            <thead>
+                <tr>
+                    <th>subject</th>
+                    <th>message</th>
+
+                    <th>sender</th>
+                    <th>action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {{#each result}}
+                <tr>
+                    <td>{{subject}}</td>
+                    <td>{{message}}</td>
+                    <td>{{email}}</td>
+
+                    <td><a class="btn btn-small red" href="/enquery/delete/{{id}}"><i
+                                class="material-icons">delete</i></a>
+                    </td>
+                </tr>
+                {{else}}
+                <tr>
+                    <td>No Enqueries available</td>
+                </tr>
+                {{/each}}
+
+
+            </tbody>
+        </table>
+
+    </div>
+</div>

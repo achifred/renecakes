@@ -1,0 +1,45 @@
+<div class="container">
+
+
+
+    <div class="container">
+        <table class="striped responsive-table centered ">
+            <thead>
+                <tr>
+                    <th>name</th>
+                    <th>email</th>
+
+                    <th>Cake type</th>
+                    <th>Phone</th>
+                    <th>Due date</th>
+                    <th>Note</th>
+                    <th>action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {{#each result}}
+                <tr>
+                    <td>{{name}}</td>
+                    <td>{{email}}</td>
+                    <td>{{type}}</td>
+                    <td>{{phone}}</td>
+                    <td>{{date}}</td>
+                    <td>{{note}}</td>
+
+                    <td><a class="btn btn-small red" href="/order/delete/{{id}}"><i
+                                class="material-icons">delete</i></a>
+                    </td>
+                </tr>
+                {{else}}
+                <tr>
+                    <td>No Orders available</td>
+                </tr>
+                {{/each}}
+
+
+            </tbody>
+        </table>
+
+    </div>
+</div>

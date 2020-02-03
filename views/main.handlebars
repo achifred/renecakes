@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rene Cakes </title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran|Courgette|Dancing+Script|Livvic&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/353c6e4283.js" crossorigin="anonymous"></script>
+</head>
+<main>
+
+    <body class=" landing">
+
+        <div>
+            <header class="container" style="margin-top: 1rem;">
+                <nav class="z-depth-0 navbar">
+                    <div class="nav-wrapper">
+                        <a href="#!" class=" navbrand ">ReneCakes</a>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i
+                                class="material-icons orange-text">menu</i></a>
+                        <ul class="right hide-on-med-and-down navitem">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/about">About</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                            <li><a href="/works">Works</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <ul class="sidenav" id="mobile-demo">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/works">Works</a></li>
+                </ul>
+
+
+            </header>
+        </div>
+
+        {{{body}}}
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="/js/main.js"></script>
+    </body>
+</main>
+<footer class="page-footer footercontainer">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Subscribe to Our Newsletter</h5>
+                <form action="/subscribe" method="POST">
+                    <div class="row">
+                        <div class="input-field col s8">
+                            <i class="material-icons prefix">email</i>
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+
+                        </div>
+                        <div class="input-field col s4">
+                            <button class="btn btn-floating btn-large waves-effect waves-light" type="submit">
+                                <i class="material-icons right">send</i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col l4  s12 center-align">
+                <h5 class="white-text">Let's get interactive</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-facebook"></i> facebook</i></a>
+                    </li>
+                    <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-instagram"></i> Instagram</i></a>
+                    <li><a class="grey-text text-lighten-3" href="#!"></a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!"><i class="fab fa-twitter"></i> Twitter</i></a>
+                    <li><a class="grey-text text-lighten-3" href="#!"></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container center-align">
+            © 2020 Rene Cakes
+
+        </div>
+    </div>
+</footer>
+
+</html>

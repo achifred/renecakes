@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="right-align">
+        <a class="btn  right-align modal-trigger " href="#adduser">Add User</a>
+    </div>
+    <div id="adduser" class="modal">
+        <div class="modal-content">
+            <h3>Add New User</h3>
+            <form action="/users/register" method="POST">
+
+                <input id="name" name="name" type="text" placeholder="Name" class="validate" value={{name}} required>
+
+                <input id="email" name="email" type="email" placeholder="Email address" class="validate" value={{email}}
+                    required>
+
+                <input id="password" name="password" type="password" placeholder="Password" class="validate"
+                    value={{password}} required>
+
+
+                <button class="btn  waves-effect waves-light" type="submit">Register</button>
+
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">close</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <table class="striped responsive-table centered ">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {{#each result}}
+                <tr>
+                    <td>{{name}}</td>
+                    <td>{{email}}</td>
+
+                    <td><a class="btn btn-small red" href="/users/delete/{{id}}"><i
+                                class="material-icons">delete</i></a>
+                        <a class="btn btn-small orange" href=""><i class="material-icons">edit</i></a></td>
+                </tr>
+                {{else}}
+                <tr>
+                    <td>No Users available</td>
+                </tr>
+
+                {{/each}}
+
+
+            </tbody>
+        </table>
+
+    </div>
+</div>
